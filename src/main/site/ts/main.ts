@@ -73,8 +73,8 @@ function updateSuggestions(matches: string[]): void {
 //  HINT: the listener callback function should be asynchronous and wait until the values are
 //  updated before calling postAndUpdate().
 document.addEventListener("keyup", async (Event: KeyboardEvent) => {
-    if (Event.key === "a") {
-        updateValues("Virgo", "Aries", "Leo")
+    if (Event.key == "a") {
+        await updateValues("Virgo", "Aries", "Leo")
         postAndUpdate()
     }
 })
